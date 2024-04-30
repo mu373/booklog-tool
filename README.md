@@ -2,7 +2,7 @@
 A CLI tool to update book information on booklog.jp
 
 ## Setup
-Create config file `~/.config/booklog-tool/config.json`.  You can obtain the Cookie (`bid`) from browsers' developer tools after you sign in to booklog. 
+Create config file `~/.config/booklog-tool/config.json`.  You can obtain the Cookie (`bid`) from browser's developer tools after you sign in to booklog. 
 ```json
 {
     "username": "your_username",
