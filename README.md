@@ -10,9 +10,15 @@ Create config file `~/.config/booklog-tool/config.json`.  You can obtain the Coo
 }
 ```
 
-## Build
+## Install
 ```sh
+# Install the binary globally
+go install github.com/mu373/booklog-tool@HEAD
+booklog-tool
+
+# Or clone the repository and build it yourself locally
 go build .
+./booklog-tool
 ```
 
 ## Usage
