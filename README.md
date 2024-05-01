@@ -22,18 +22,25 @@ go build .
 ```
 
 ## Usage
-Prepare a text file containing booklog item IDs.
-```txt
+Prepare a text file containing booklog item IDs or ISBNs. Use `-i isbn` option when using ISBN list.
+```txt:items.txt
 4051331255
 4051331256
 4051331257
 ```
 
+```txt:isbn.txt
+9784101010182
+9784101010045
+```
+
 ```sh
 # Add a new tag to item
-./booklog-tool add-tag -t "your_new_tag" -f list.txt
+./booklog-tool add-tag -t "your_new_tag" -f items.txt
+./booklog-tool add-tag -t "your_new_tag" -i isbn -f isbn.txt
 
 # Update location tag (e.g., "loc_Tokyo", "loc_Osaka", "loc_London") of the item
 # If a location tag already exists, it will be overrided with the new location tag
-./booklog-tool update-location -l "Osaka" -f list.txt
+./booklog-tool update-location -l "Osaka" -f items.txt
+./booklog-tool update-location -l "Osaka" -i isbn -f .txt 
 ```
