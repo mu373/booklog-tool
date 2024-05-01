@@ -23,12 +23,15 @@ go build .
 
 ## Usage
 Prepare a text file containing booklog item IDs or ISBNs. Use `-i isbn` option when using ISBN list.
+
+`items.txt`
 ```txt:items.txt
 4051331255
 4051331256
 4051331257
 ```
 
+`isbn.txt`
 ```txt:isbn.txt
 9784101010182
 9784101010045
