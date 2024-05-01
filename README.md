@@ -45,5 +45,5 @@ Prepare a text file containing booklog item IDs or ISBNs. Use `-i isbn` option w
 # Update location tag (e.g., "loc_Tokyo", "loc_Osaka", "loc_London") of the item
 # If a location tag already exists, it will be overrided with the new location tag
 ./booklog-tool update-location -l "Osaka" -f items.txt
-./booklog-tool update-location -l "Osaka" -i isbn -f .txt 
+./booklog-tool update-location -l "Osaka" -i isbn -f isbn.txt 
 ```
